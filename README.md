@@ -35,7 +35,32 @@ A secure API for managing IMF gadgets, built with Node.js, Express, and PostgreS
 git clone  https://github.com/vishnuu5/imf-gadget-api_task
 cd imf-gadget-api
 ```
+2. Install dependency
+```bash
+npm install
+```
+3. Create .env file and add this
+```bash
+# Server Configuration
+PORT=3000
+NODE_ENV=development
 
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=imf_gadgets
+DB_USER=postgres
+DB_PASSWORD=--------
+
+# JWT Configuration
+JWT_SECRET=token
+JWT_EXPIRES_IN=1d
+```
+4. server start
+```bash
+npm run dev
+```
+   
 ## Testing the API
 
 You can test the API using tools like Postman or curl:
