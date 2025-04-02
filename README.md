@@ -50,22 +50,22 @@ POST http://localhost:3000/api/auth/register
 2. Login to get a JWT token:
 
 ```bash
- POST http://localhost:3000/api/auth/login \
-  -H "Content-Type: application/json" \
+ POST http://localhost:3000/api/auth/login
+  -H "Content-Type: application/json"
   -d '{"username": "admin", "password": "password123"}'
 ```
 
 3. Create a gadget (using the token):
 ```bash
- POST http://localhost:3000/api/gadgets \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+ POST http://localhost:3000/api/gadgets
+  -H "Content-Type: application/json" 
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
   -d '{"name": "Explosive Pen", "description": "Looks like a pen, works like a bomb"}'
   ```
 
 4. Get all gadgets:
 
 ```bash
- GET http://localhost:3000/api/gadgets \
+ GET http://localhost:3000/api/gadgets
   -H "Authorization: Bearer
 ```  
