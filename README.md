@@ -31,10 +31,10 @@ A secure API for managing IMF gadgets, built with Node.js, Express, and PostgreS
 
 1. Clone the repository
 
-
-
-
-
+```bash
+git clone  https://github.com/vishnuu5/imf-gadget-api_task
+cd imf-gadget-api
+```
 
 ## Testing the API
 
